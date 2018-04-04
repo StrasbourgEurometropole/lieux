@@ -19,7 +19,7 @@ includes:
 
  - categories/territories
 
-search: true
+search: false
 ---
 
 # Introduction
