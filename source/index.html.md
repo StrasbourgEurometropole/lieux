@@ -10,6 +10,7 @@ toc_footers:
 
 includes:
  - places/title
+ - places/all
  - places/get
  - places/by-sig
  - places/by-type
@@ -19,6 +20,7 @@ includes:
 
  - categories/title
  - categories/territories
+ - categories/place-types
 
 search: true
 ---
