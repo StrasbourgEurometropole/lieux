@@ -17,6 +17,7 @@ includes:
  - places/by-territory-and-type
  - places/by-name
 
+ - categories/title
  - categories/territories
 
 search: true
