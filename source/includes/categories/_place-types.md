@@ -1,7 +1,7 @@
 ## Liste des types de lieux
 
 ```shell
-curl "https://www.strasbourg.eu/api/jsonws/place.place/get-types
+curl "https://www.strasbourg.eu/api/jsonws/place.place/get-types"
   -H "Authorization: Basic KEY"
 ```
 
