@@ -465,7 +465,7 @@
 <td>Identifiant SIG du lieu</td>
 </tr>
 </tbody></table>
-<h2 id='liste-des-lieux-par-type'>Liste des lieux par type</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://www.strasbourg.eu/api/jsonws/place.place/get-place-by-type/type-id/Cat_06_05"</span>
+<h2 id='liste-des-lieux-par-type'>Liste des lieux par type</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://www.strasbourg.eu/api/jsonws/place.place/get-places-by-type/type-id/Cat_06_05"</span>
 </code></pre>
 <blockquote>
 <p>La structure JSON renvoyée est la suivante :</p>
@@ -483,7 +483,7 @@
 </span></code></pre>
 <p>Ce endpoint renvoie la liste des lieux correspondant à l&#39;identifiant SIG du type de lieu passé en paramètre.</p>
 <h3 id='requete-http'>Requête HTTP</h3>
-<p><code>GET https://www.strasbourg.eu/api/jsonws/place.place/get-place-by-type/type-id/&lt;ID_TYPE&gt;</code></p>
+<p><code>GET https://www.strasbourg.eu/api/jsonws/place.place/get-places-by-type/type-id/&lt;ID_TYPE&gt;</code></p>
 <h3 id='parametres'>Paramètres</h3>
 <table><thead>
 <tr>
@@ -496,7 +496,7 @@
 <td>Identifiant SIG du type de lieu</td>
 </tr>
 </tbody></table>
-<h2 id='liste-des-lieux-par-territoire'>Liste des lieux par territoire</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://www.strasbourg.eu/api/jsonws/place.place/get-place-by-territory/territory-id/P_FR"</span>
+<h2 id='liste-des-lieux-par-territoire'>Liste des lieux par territoire</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://www.strasbourg.eu/api/jsonws/place.place/get-places-by-territory/territory-id/P_FR"</span>
 </code></pre>
 <blockquote>
 <p>La structure JSON renvoyée est la suivante :</p>
@@ -514,7 +514,7 @@
 </span></code></pre>
 <p>Ce endpoint renvoie la liste des lieux correspondant à l&#39;identifiant SIG du territoire passé en paramètre.</p>
 <h3 id='requete-http'>Requête HTTP</h3>
-<p><code>GET https://www.strasbourg.eu/api/jsonws/place.place/get-place-by-territory/territory-id/&lt;ID_TERRITORY&gt;</code></p>
+<p><code>GET https://www.strasbourg.eu/api/jsonws/place.place/get-places-by-territory/territory-id/&lt;ID_TERRITORY&gt;</code></p>
 <h3 id='parametres'>Paramètres</h3>
 <table><thead>
 <tr>
@@ -527,7 +527,7 @@
 <td>Identifiant SIG du territoire</td>
 </tr>
 </tbody></table>
-<h2 id='liste-des-lieux-par-territoire-et-type'>Liste des lieux par territoire et type</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://www.strasbourg.eu/api/jsonws/place.place/get-place-by-territory-and-type/territory-id/P_FR/type-id/&lt;ID_TYPE&gt;"</span>
+<h2 id='liste-des-lieux-par-territoire-et-type'>Liste des lieux par territoire et type</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://www.strasbourg.eu/api/jsonws/place.place/get-places-by-territory-and-type/territory-id/P_FR/type-id/&lt;ID_TYPE&gt;"</span>
 </code></pre>
 <blockquote>
 <p>La structure JSON renvoyée est la suivante :</p>
@@ -545,7 +545,7 @@
 </span></code></pre>
 <p>Ce endpoint renvoie la liste des lieux correspondant à l&#39;identifiant SIG du territoire et à l&#39;identifiant SIG du type de lieu passés en paramètres.</p>
 <h3 id='requete-http'>Requête HTTP</h3>
-<p><code>GET https://www.strasbourg.eu/api/jsonws/place.place/get-place-by-territory-and-type/territory-id/&lt;ID_TERRITORY&gt;/type-id/&lt;ID_TYPE&gt;</code></p>
+<p><code>GET https://www.strasbourg.eu/api/jsonws/place.place/get-places-by-territory-and-type/territory-id/&lt;ID_TERRITORY&gt;/type-id/&lt;ID_TYPE&gt;</code></p>
 <h3 id='parametres'>Paramètres</h3>
 <table><thead>
 <tr>
@@ -580,7 +580,7 @@
 </span></code></pre>
 <p>Ce endpoint renvoie la liste des lieux ayant un nom contenant la chaîne de caractère passée en paramètre.</p>
 <h3 id='requete-http'>Requête HTTP</h3>
-<p><code>GET https://www.strasbourg.eu/api/jsonws/place.place/get-place-by-name-and-language/keyword/&lt;KEYWORD&gt;/language/fr_FR</code></p>
+<p><code>GET https://www.strasbourg.eu/api/jsonws/place.place/get-places-by-name-and-language/name/&lt;NAME&gt;/language/fr_FR</code></p>
 <h3 id='parametres'>Paramètres</h3>
 <table><thead>
 <tr>
@@ -589,13 +589,13 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>KEYWORD</td>
+<td>NAME</td>
 <td>Mot-clé de recherche</td>
 </tr>
 </tbody></table>
-<h1 id='categories'>Catégories</h1><h2 id='liste-des-territoires'>Liste des territoires</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://www.strasbourg.eu/api/jsonws/agenda.event/get-territories
-  -H "</span>Authorization: Basic KEY<span class="s2">"
-</span></code></pre>
+<h1 id='categories'>Catégories</h1><h2 id='liste-des-territoires'>Liste des territoires</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://www.strasbourg.eu/api/jsonws/agenda.event/get-territories"</span>
+  -H <span class="s2">"Authorization: Basic KEY"</span>
+</code></pre>
 <blockquote>
 <p>La structure JSON renvoyée est la suivante :</p>
 </blockquote>
@@ -639,9 +639,9 @@
 <aside class="notice">Un territoire peut avoir un territoire parent. La profondeur de la catégorie dans l'arbre global est indiqué par la propriété "level" et l'identifiant de la catégorie parente par "parentId"</aside>
 <h3 id='http-request'>HTTP Request</h3>
 <p><code>GET https://www.strasbourg.eu/api/jsonws/agenda.event/get-territories</code></p>
-<h2 id='liste-des-types-de-lieux'>Liste des types de lieux</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://www.strasbourg.eu/api/jsonws/place.place/get-types
-  -H "</span>Authorization: Basic KEY<span class="s2">"
-</span></code></pre>
+<h2 id='liste-des-types-de-lieux'>Liste des types de lieux</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://www.strasbourg.eu/api/jsonws/place.place/get-types"</span>
+  -H <span class="s2">"Authorization: Basic KEY"</span>
+</code></pre>
 <blockquote>
 <p>La structure JSON renvoyée est la suivante :</p>
 </blockquote>
